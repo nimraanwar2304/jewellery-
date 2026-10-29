@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelle — Fine Jewellery for Women</title>
+  <meta name="description" content="Aurelle crafts timeless fine jewellery for women — rings, necklaces, earrings and bracelets made with ethically sourced gems and gold." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <p>Complimentary shipping on all orders over $150 &nbsp;·&nbsp; Free 30-day returns</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="nav-inner">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav nav-left" aria-label="Primary">
+        <a href="#collections">Collections</a>
+        <a href="#featured">New In</a>
+        <a href="#story">Our Story</a>
+      </nav>
+
+      <a href="#" class="logo" aria-label="Aurelle home">
+        Aurelle<span class="logo-sub">FINE JEWELLERY</span>
+      </a>
+
+      <nav class="nav nav-right" aria-label="Secondary">
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <button class="icon-btn" id="cartBtn" aria-label="Open bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#collections">Collections</a>
+      <a href="#featured">New In</a>
+      <a href="#story">Our Story</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">The 2026 Signature Edit</p>
+      <h1>Jewellery that<br /><em>whispers</em> your story</h1>
+      <p class="hero-sub">Hand-finished pieces in 18k gold and ethically sourced stones — designed for women who wear their light out loud.</p>
+      <div class="hero-actions">
+        <a href="#collections" class="btn btn-solid">Shop Collections</a>
+        <a href="#story" class="btn btn-ghost">Discover Our Craft</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>18K Gold</span><i>✦</i><span>Ethically Sourced</span><i>✦</i><span>Handcrafted</span><i>✦</i><span>Hypoallergenic</span><i>✦</i><span>Lifetime Warranty</span><i>✦</i>
+      <span>18K Gold</span><i>✦</i><span>Ethically Sourced</span><i>✦</i><span>Handcrafted</span><i>✦</i><span>Hypoallergenic</span><i>✦</i><span>Lifetime Warranty</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- Collections -->
+  <section class="section" id="collections">
+    <div class="section-head reveal">
+      <p class="eyebrow">Curated For You</p>
+      <h2>Shop by Collection</h2>
+    </div>
+
+    <div class="collections">
+      <a href="#featured" class="collection-card tall reveal" style="--i:0">
+        <div class="cc-img cc-necklace"></div>
+        <div class="cc-body">
+          <h3>Necklaces</h3>
+          <p>From delicate chains to statement pendants</p>
+          <span class="link-arrow">Explore →</span>
+        </div>
+      </a>
+      <a href="#featured" class="collection-card reveal" style="--i:1">
+        <div class="cc-img cc-earrings"></div>
+        <div class="cc-body">
+          <h3>Earrings</h3>
+          <p>Studs, hoops & chandeliers</p>
+          <span class="link-arrow">Explore →</span>
+        </div>
+      </a>
+      <a href="#featured" class="collection-card reveal" style="--i:2">
+        <div class="cc-img cc-rings"></div>
+        <div class="cc-body">
+          <h3>Rings</h3>
+          <p>Promise, stacking & eternity</p>
+          <span class="link-arrow">Explore →</span>
+        </div>
+      </a>
+      <a href="#featured" class="collection-card wide reveal" style="--i:3">
+        <div class="cc-img cc-bracelets"></div>
+        <div class="cc-body">
+          <h3>Bracelets & Anklets</h3>
+          <p>Gold bangles and dainty chain anklets</p>
+          <span class="link-arrow">Explore →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="section section-alt" id="featured">
+    <div class="section-head reveal">
+      <p class="eyebrow">Fresh From the Atelier</p>
+      <h2>New Arrivals</h2>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="necklace">Necklaces</button>
+        <button class="filter" data-filter="earrings">Earrings</button>
+        <button class="filter" data-filter="ring">Rings</button>
+        <button class="filter" data-filter="bracelet">Bracelets</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- Story -->
+  <section class="section story" id="story">
+    <div class="story-media reveal">
+      <div class="story-img"></div>
+      <div class="story-badge">
+        <strong>15+</strong>
+        <span>Years of<br />craftsmanship</span>
+      </div>
+    </div>
+    <div class="story-text reveal">
+      <p class="eyebrow">Our Story</p>
+      <h2>Made by women,<br />for women</h2>
+      <p>Aurelle began in a small studio with a single belief — that fine jewellery should feel personal, not precious. Every curve is drawn by our all-women design team, then hand-finished by master goldsmiths.</p>
+      <ul class="ticks">
+        <li>Recycled 18k gold &amp; conflict-free stones</li>
+        <li>Hypoallergenic, nickel-free finishes</li>
+        <li>Engraving &amp; bespoke commissions available</li>
+        <li>Lifetime polishing &amp; repair service</li>
+      </ul>
+      <a href="#contact" class="btn btn-solid">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat reveal"><strong data-count="48000" data-suffix="+">0</strong><span>Happy customers</span></div>
+    <div class="stat reveal"><strong data-count="1200" data-suffix="+">0</strong><span>Unique designs</span></div>
+    <div class="stat reveal"><strong data-count="98" data-suffix="%">0</strong><span>Would recommend us</span></div>
+    <div class="stat reveal"><strong data-count="32" data-suffix="">0</strong><span>Countries shipped</span></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="section-head reveal">
+      <p class="eyebrow">Kind Words</p>
+      <h2>Loved by Women Everywhere</h2>
+    </div>
+
+    <div class="testi-wrap">
+      <button class="t-nav prev" id="tPrev" aria-label="Previous review">‹</button>
+      <div class="testi-viewport">
+        <div class="testi-track" id="testiTrack"></div>
+      </div>
+      <button class="t-nav next" id="tNext" aria-label="Next review">›</button>
+    </div>
+    <div class="t-dots" id="tDots"></div>
+  </section>
+
+  <!-- Newsletter / contact -->
+  <section class="newsletter" id="contact">
+    <div class="nl-inner reveal">
+      <p class="eyebrow">Join the List</p>
+      <h2>Get 10% off your first piece</h2>
+      <p>Early access to drops, styling notes and members-only offers. No spam — just shine.</p>
+      <form class="nl-form" id="nlForm" novalidate>
+        <input type="email" id="nlEmail" placeholder="your@email.com" aria-label="Email address" required />
+        <button type="submit" class="btn btn-solid">Subscribe</button>
+      </form>
+      <p class="nl-msg" id="nlMsg" role="status"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a href="#" class="logo">Aurelle<span class="logo-sub">FINE JEWELLERY</span></a>
+        <p>Timeless pieces, thoughtfully made. Studio in Jaipur, shipped worldwide.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Pinterest">PI</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#featured">New Arrivals</a>
+        <a href="#collections">Necklaces</a>
+        <a href="#collections">Earrings</a>
+        <a href="#collections">Rings</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Shipping &amp; Returns</a>
+        <a href="#">Ring Size Guide</a>
+        <a href="#">Jewellery Care</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#story">Our Story</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Careers</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p>© 2026 Aurelle Jewellery. All rights reserved.</p>
+      <p>Privacy · Terms · Cookies</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Your Bag</h3>
+      <button class="close-btn" id="closeDrawer" aria-label="Close bag">✕</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <div class="drawer-foot">
+      <div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0</strong></div>
+      <button class="btn btn-solid full" id="checkoutBtn">Checkout</button>
+      <p class="drawer-note" id="drawerNote"></p>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
